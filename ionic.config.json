@@ -1,0 +1,7 @@
+{
+  "name": "halloween-hombre-lobo",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

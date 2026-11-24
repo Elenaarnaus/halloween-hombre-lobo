@@ -1,0 +1,31 @@
+
+<ion-content class="gallery-content">
+
+  <header class="gallery-header">
+    <p>EL RINCÓN DEL TERROR</p>
+    <h1>Galería</h1>
+    <p>Imágenes del mundo del hombre lobo.</p>
+  </header>
+
+  <section class="gallery-container">
+
+    <div class="gallery-item" *ngFor="let imagen of imagenes">
+
+      <img [src]="imagen.src" [alt]="imagen.titulo">
+
+      <div class="gallery-info">
+        <h2>{{ imagen.titulo }}</h2>
+        <p>{{ imagen.texto }}</p>
+      </div>
+
+    </div>
+
+    <div class="gallery-quote">
+      "No todos los monstruos se esconden en la oscuridad.
+      Algunos esperan a que salga la luna."
+    </div>
+
+  </section>
+
+</ion-content>
+

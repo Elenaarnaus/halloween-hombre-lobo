@@ -1,0 +1,11 @@
+{
+  "name": "halloween-ui",
+  "version": "1.0.0",
+  "description": "Libreria de componentes visuales tematicos de Halloween",
+  "author": "Elena Arnaus",
+  "peerDependencies": {
+    "@angular/common": "^20.0.0",
+    "@angular/core": "^20.0.0"
+  }
+}
+

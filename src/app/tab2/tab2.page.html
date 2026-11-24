@@ -1,0 +1,44 @@
+
+<ion-content class="history-content">
+
+  <header class="history-header">
+    <p>MITOS Y LEYENDAS</p>
+    <h1>La historia</h1>
+    <p class="description">
+      Descubre los secretos que se esconden detrás
+      de la maldición del hombre lobo.
+    </p>
+  </header>
+
+  <section class="history-section">
+
+    <h2>Los secretos de la bestia</h2>
+
+    <lib-monster-card
+      [image]="poderes.image"
+      [title]="poderes.title"
+      [text]="poderes.text"
+      [buttonText]="poderes.buttonText"
+      (buttonClick)="mostrarMensaje(poderes.title)">
+    </lib-monster-card>
+
+    <lib-monster-card
+      [image]="debilidades.image"
+      [title]="debilidades.title"
+      [text]="debilidades.text"
+      [buttonText]="debilidades.buttonText"
+      (buttonClick)="mostrarMensaje(debilidades.title)">
+    </lib-monster-card>
+
+    <lib-monster-card
+      [image]="curiosidades.image"
+      [title]="curiosidades.title"
+      [text]="curiosidades.text"
+      [buttonText]="curiosidades.buttonText"
+      (buttonClick)="mostrarMensaje(curiosidades.title)">
+    </lib-monster-card>
+
+  </section>
+
+</ion-content>
+

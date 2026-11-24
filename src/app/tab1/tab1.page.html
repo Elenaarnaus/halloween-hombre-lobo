@@ -1,0 +1,39 @@
+
+<ion-content class="home-content">
+
+  <div class="hero">
+
+    <p class="subtitle">EL MISTERIO DE LA NOCHE</p>
+
+    <h1>WEREWOLF</h1>
+
+    <p class="phrase">
+      "Cuando la luna llena aparece,
+      nadie está a salvo."
+    </p>
+
+  </div>
+
+  <section class="section-container">
+
+    <h2>La criatura de la noche</h2>
+
+    <p class="intro">
+      Descubre el oscuro mundo de una de las criaturas
+      más temidas de las leyendas de terror.
+    </p>
+
+    <lib-monster-card
+      [image]="hombreLobo.image"
+      [title]="hombreLobo.title"
+      [text]="hombreLobo.text"
+      [buttonText]="hombreLobo.buttonText"
+      (buttonClick)="mostrarMensaje()">
+    </lib-monster-card>
+
+  </section>
+
+  <div class="moon-decoration">☾</div>
+
+</ion-content>
+

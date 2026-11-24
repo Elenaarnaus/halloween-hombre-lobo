@@ -1,0 +1,22 @@
+<div class="monster-card">
+
+  <div class="monster-image">
+    <img [src]="image" [alt]="title">
+    <div class="image-overlay"></div>
+  </div>
+
+  <div class="monster-content">
+
+    <h2>{{ title }}</h2>
+
+    <p>{{ text }}</p>
+
+    <button class="monster-button" (click)="onButtonClick()">
+      {{ buttonText }}
+      <span>➜</span>
+    </button>
+
+  </div>
+
+</div>
+

@@ -1,0 +1,96 @@
+
+:host {
+  display: block;
+}
+
+.monster-card {
+  background: linear-gradient(145deg, #24152f, #100e16);
+  border: 1px solid #71334f;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.monster-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(163, 32, 53, 0.3);
+}
+
+.monster-image {
+  height: 210px;
+  position: relative;
+  overflow: hidden;
+}
+
+.monster-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.monster-card:hover .monster-image img {
+  transform: scale(1.07);
+}
+
+.image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    transparent 60%,
+    rgba(16, 14, 22, 0.7)
+  );
+}
+
+.monster-content {
+  padding: 20px;
+}
+
+.monster-content h2 {
+  color: #d6b56d;
+  font-family: Georgia, serif;
+  font-size: 24px;
+  margin: 0 0 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.monster-content p {
+  color: #e8e3ec;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.monster-button {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #a32035;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #71243b, #a32035);
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.monster-button span {
+  margin-left: 8px;
+}
+
+.monster-button:hover {
+  background: #c02c48;
+  box-shadow: 0 0 15px rgba(192, 44, 72, 0.5);
+}
+
+.monster-button:active {
+  transform: scale(0.96);
+}
+
+.monster-button:focus-visible {
+  outline: 2px solid #d6b56d;
+  outline-offset: 3px;
+}
